@@ -1,0 +1,19 @@
+xcom - lets share small piece of data accross the task
+
+it airflow class : from airflow.model.xcom
+methods : xcom.push(), xcom.pull()
+
+by default - imbuilt push - def fun(**context): return 'some_val' - airflow handle auto xcom.push(key = 'return_value', value =some_val)
+
+xcom.push() -- key : custom key , value  - serialize : convert py object to byets : MTD DB storage ( doesn't support py obj)
+xcom.pull() -- task_id, key - deserialize : convert byte back to py obj , for  task ready to use 
+
+context['ti'] -- dict 
+ keys: 
+  ti - taskinstance, dag_id
+  ds
+  run_id
+  dag
+
+blob : binary large object - raw bytes
+
