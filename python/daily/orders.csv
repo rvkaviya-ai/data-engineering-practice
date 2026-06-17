@@ -1,0 +1,6 @@
+order_id,customer_name,amount,order_date,status
+001,Kaviya,500.0,2024-01-01,Completed
+002,Kishore,300.0,2024-01-02,pending
+003,Ram,250.0,2024-01-03,completed
+004,Priya,150.0,2024-01-04,COMPLETED
+005,Kumar,200.0,2024-01-05,cancelled
