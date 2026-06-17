@@ -1,0 +1,12 @@
+-- Problem: Triangle Judgement
+-- Link: https://leetcode.com/problems/triangle-judgement/
+-- Difficulty: Easy
+-- Topic: Select, Case When
+
+-- Solution:
+SELECT x, y, z,
+    CASE
+        WHEN x + y > z AND x + z > y AND y + z > x THEN 'Yes'
+        ELSE 'No'
+    END AS triangle
+FROM Triangle;
